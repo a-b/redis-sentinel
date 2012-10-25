@@ -1,6 +1,6 @@
 = redis-sentinel
 
-Description goes here.
+Redis sentinel gem allows you to use http://redis.io/topics/sentinel to configure redis connector for your application 
 
 == Contributing to redis-sentinel
  

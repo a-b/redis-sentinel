@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "redis-sentinel"
   gem.homepage = "http://github.com/a-b/redis-sentinel"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Redis sentinel based application redis connector configurator}
+  gem.description = %Q{Redis sentinel gem allows you to use http://redis.io/topics/sentinel to configure redis connector for your application}
   gem.email = "a.b@usa.com"
   gem.authors = ["Alexander Berezovsky"]
   # dependencies defined in Gemfile
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
